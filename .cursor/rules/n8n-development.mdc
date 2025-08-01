@@ -1,0 +1,40 @@
+---
+description: n8n Node Development Best Practices
+globs: ["**/*.node.ts", "**/*.credentials.ts", "src/**/*.ts"]
+alwaysApply: true
+---
+
+# n8n Node Development Guidelines
+
+Use these guidelines when developing n8n nodes:
+
+1. **Node Structure**:
+   - Use declarative-style for simple nodes
+   - Use programmatic-style for complex logic
+   - Follow n8n's file naming conventions
+
+2. **TypeScript Best Practices**:
+   - Implement INodeType interface
+   - Use proper typing for node parameters
+   - Define clear input/output schemas
+
+3. **Error Handling**:
+   - Use NodeApiError for API-related errors
+   - Implement proper error messages
+   - Handle rate limiting appropriately
+
+4. **Testing**:
+   - Write unit tests for execute methods
+   - Test credential validation
+   - Verify parameter handling
+
+5. **Documentation**:
+   - Include clear node descriptions
+   - Document all parameters
+   - Provide usage examples
+
+6. **Code Quality**:
+   - Use consistent naming conventions
+   - Add proper TypeScript types
+   - Follow n8n's coding standards
+   - Include JSDoc comments for complex functions
